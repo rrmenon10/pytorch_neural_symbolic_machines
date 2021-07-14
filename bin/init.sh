@@ -1,10 +1,10 @@
 bash bin/setup_env.sh
-conda activate tabert
+/opt/conda/bin/conda activate tabert
 pip install --editable .
-conda deactivate
+/opt/conda/bin/conda deactivate
 
 ## Install the nsm environment
-conda env update --name tabert --file data/env.yml
+/opt/conda/bin/conda env update --name tabert --file data/env.yml
 
 ## Download the directories
 wget http://www.cs.cmu.edu/~pengchey/pytorch_nsm.zip

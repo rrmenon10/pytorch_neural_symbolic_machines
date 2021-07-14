@@ -18,9 +18,9 @@ pwd
 
 echo "---------------- Update Conda Environment ---------------"
 echo "Updating conda environment"
-conda env create --file data/env_tabert.yml
+/opt/conda/bin/conda env create --file data/env_tabert.yml
 # or use `conda env update to update the current environment`
-conda activate tabert
+/opt/conda/bin/conda activate tabert
 
 PWD_DIR=$(pwd)
 
