@@ -2,9 +2,10 @@
 source ~/.bashrc
 git clone https://github.com/facebookresearch/TaBERT.git
 cd TaBERT
-bash scripts/setup_env.sh
+source scripts/setup_env.sh
 conda activate tabert
 pip install --editable .
+cd ..
 conda env update --name tabert --file data/env.yml
 conda deactivate
 
