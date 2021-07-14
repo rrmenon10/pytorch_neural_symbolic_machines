@@ -1,7 +1,7 @@
 
 bert_size=$1
 
-OMP_NUM_THREADS=1 /opt/conda/envs/tabert/bin/python -m \
+OMP_NUM_THREADS=1 /opt/conda/envs/tabert/bin/python3.7 -m \
   table.experiments \
   train \
   seed 0 \
