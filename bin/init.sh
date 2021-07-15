@@ -4,6 +4,8 @@ git clone https://github.com/facebookresearch/TaBERT.git
 cd TaBERT
 source scripts/setup_env.sh
 conda activate tabert
+pip install torch==1.8.1
+pip install --no-index torch-scatter -f https://pytorch-geometric.com/whl/torch-1.8.1+cu102.html
 pip install --editable .
 cd ..
 conda env update --name tabert --file data/env.yml
